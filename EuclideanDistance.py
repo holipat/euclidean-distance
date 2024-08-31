@@ -18,12 +18,12 @@ def distances_of_points():
     return distances
 
 def min_distance(distance):
+    min = distance[0]
     for i in range(1,len(distance)):
-        if distance[i-1]<distance[i]:
-            min = distance[i-1]
+        if distance[i]<min:
+            min = distance[i]
     print(f"Minimum distance is {min}")
-
-    return
+    return None
 
 distances_of_points()
 min_distance(distances)
